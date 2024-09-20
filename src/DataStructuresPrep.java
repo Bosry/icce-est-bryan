@@ -116,7 +116,7 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
     }
 
     /**
@@ -128,7 +128,14 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultado = 1;
+        if (exponent == 0) {
+            System.out.println("El resultado es 1");
+        }
+        for (int i = 0; i < exponent; i++) {
+            resultado *= base;
+        }
+        return resultado;
     }
 
     /**
