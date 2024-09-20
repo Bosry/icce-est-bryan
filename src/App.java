@@ -49,7 +49,7 @@ boolean perfect = dataStructuresPrep.isPerfectNumber(8);
         System.out.println("El resultado de subtractAlgorithm es: " + resultado);
         System.out.println("El resultado de la multiplicacion es: " + multiplicacion);
         System.out.println("El resultado de la division es: " + division);
-System.out.println("El numero ingresado es :"+perfect);
+System.out.println("El numero ingresado es :"+ perfect);
         System.out.println("El factorial del numero ingresado es: " + factorial);
 
     }
