@@ -26,7 +26,14 @@ public class DataStructuresPrep {
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
+        int count = 0;
+        while (a > (b + count)) {
+            count = count + 1;
+
+        }
+
+        return count;
     }
 
     /**
@@ -38,8 +45,12 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultado = 0;
+        for (int i = 0; i < b; i++) {
+            resultado = resultado + a;
+        }
 
+        return resultado;
     }
 
     /**
@@ -51,8 +62,16 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int count = 0;
+        if (divisor == 0) {
+            System.out.println("La division no es posible");
+        }
+        int residuo = dividend;
+        while (residuo >= divisor) {
+            count++;
+            residuo = residuo - divisor;
+        }
+        return count;
     }
 
     /**
@@ -64,7 +83,14 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int sum = 0;
+        for (int i = 1; i < number; i++) {
+            if (number % 1 == 0) {
+                sum = i + sum;
+            }
+        }
+        return sum == number;
+
     }
 
     /**
@@ -75,7 +101,11 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultado = 1;
+        for (int i = 1; i <= number; i++) {
+            resultado *= i;
+        }
+        return resultado;
     }
 
     /**
